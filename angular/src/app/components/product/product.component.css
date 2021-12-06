@@ -1,0 +1,41 @@
+.product {
+  width: 230px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cecece;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.product:hover {
+
+}
+
+.product >.img {
+  width: 100%;
+  height: 210px;
+}
+
+.product >.img > img {
+  width: 100%;
+  height: auto;
+}
+
+.product .promotion {
+  color: red;
+}
+
+mat-form-field {
+  width: 100%;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
