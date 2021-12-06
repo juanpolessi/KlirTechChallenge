@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\e4bar\\Desktop\\OneDrive\\KlirStuff\\_RH\\Tech Challenge\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\Klir.TechChallenge.Web.Api.csproj": {}
+    "C:\\Users\\juanp\\Documents\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\Klir.TechChallenge.Web.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\e4bar\\Desktop\\OneDrive\\KlirStuff\\_RH\\Tech Challenge\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\Klir.TechChallenge.Web.Api.csproj": {
+    "C:\\Users\\juanp\\Documents\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\Klir.TechChallenge.Web.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\e4bar\\Desktop\\OneDrive\\KlirStuff\\_RH\\Tech Challenge\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\Klir.TechChallenge.Web.Api.csproj",
+        "projectUniqueName": "C:\\Users\\juanp\\Documents\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\Klir.TechChallenge.Web.Api.csproj",
         "projectName": "Klir.TechChallenge.Web.Api",
-        "projectPath": "C:\\Users\\e4bar\\Desktop\\OneDrive\\KlirStuff\\_RH\\Tech Challenge\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\Klir.TechChallenge.Web.Api.csproj",
-        "packagesPath": "C:\\Users\\e4bar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\e4bar\\Desktop\\OneDrive\\KlirStuff\\_RH\\Tech Challenge\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\obj\\",
+        "projectPath": "C:\\Users\\juanp\\Documents\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\Klir.TechChallenge.Web.Api.csproj",
+        "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\juanp\\Documents\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\e4bar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\juanp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,11 +40,19 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -68,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

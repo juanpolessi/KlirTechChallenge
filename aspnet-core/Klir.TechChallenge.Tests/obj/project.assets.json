@@ -973,11 +973,12 @@
       ]
     },
     "Microsoft.CSharp/4.0.1": {
-      "sha512": "iN37XU89R5n53OKMPqKGI9bmrXW8fDWec0UdrApQxum+PHR7o18s1CedoR0b6TBEAwUceE9RpAWzpkAKd/A+GA==",
+      "sha512": "17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
       "type": "package",
       "path": "microsoft.csharp/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -1535,11 +1536,12 @@
       ]
     },
     "System.Dynamic.Runtime/4.0.11": {
-      "sha512": "CWUIUL7jFCU1zDtu5LPG6ZpjNufWbYsoKw+Jo7W91ina/CthlMRIPBFrbvPYcS2Z4qyf6dWBgjEeZM3wc5+/AQ==",
+      "sha512": "db34f6LHYM0U0JpE+sOmjar27BnqTVkbLJhgfwMpTdgTigG/Hna3m2MYVwnFzGGKnEJk2UXFuoVTr8WUbU91/A==",
       "type": "package",
       "path": "system.dynamic.runtime/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2743,11 +2745,12 @@
       ]
     },
     "System.Runtime.Serialization.Primitives/4.1.1": {
-      "sha512": "sPEQpszgqDP+NohcNSrM/Im/qPc9KZUsH4nE/GX5tqwjhp1gohI6PCYpZJQr6BLmAgHwtRtznqpwcAGaEZxeBQ==",
+      "sha512": "HZ6Du5QrTG8MNJbf4e4qMO3JRAkIboGT5Fk804uZtg3Gq516S7hAqTm2UZKUHa7/6HUGdVy3AqMQKbns06G/cg==",
       "type": "package",
       "path": "system.runtime.serialization.primitives/4.1.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3473,23 +3476,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\e4bar\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\juanp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\e4bar\\Desktop\\OneDrive\\KlirStuff\\_RH\\Tech Challenge\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\Klir.TechChallenge.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\juanp\\Documents\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\Klir.TechChallenge.Tests.csproj",
       "projectName": "Klir.TechChallenge.Tests",
-      "projectPath": "C:\\Users\\e4bar\\Desktop\\OneDrive\\KlirStuff\\_RH\\Tech Challenge\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\Klir.TechChallenge.Tests.csproj",
-      "packagesPath": "C:\\Users\\e4bar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\e4bar\\Desktop\\OneDrive\\KlirStuff\\_RH\\Tech Challenge\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\obj\\",
+      "projectPath": "C:\\Users\\juanp\\Documents\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\Klir.TechChallenge.Tests.csproj",
+      "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\juanp\\Documents\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\e4bar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\juanp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3547,7 +3546,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

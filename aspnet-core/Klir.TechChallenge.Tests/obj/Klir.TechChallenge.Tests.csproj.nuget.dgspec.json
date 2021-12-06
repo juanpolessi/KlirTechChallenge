@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\e4bar\\Desktop\\OneDrive\\KlirStuff\\_RH\\Tech Challenge\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\Klir.TechChallenge.Tests.csproj": {}
+    "C:\\Users\\juanp\\Documents\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\Klir.TechChallenge.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\e4bar\\Desktop\\OneDrive\\KlirStuff\\_RH\\Tech Challenge\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\Klir.TechChallenge.Tests.csproj": {
+    "C:\\Users\\juanp\\Documents\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\Klir.TechChallenge.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\e4bar\\Desktop\\OneDrive\\KlirStuff\\_RH\\Tech Challenge\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\Klir.TechChallenge.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\juanp\\Documents\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\Klir.TechChallenge.Tests.csproj",
         "projectName": "Klir.TechChallenge.Tests",
-        "projectPath": "C:\\Users\\e4bar\\Desktop\\OneDrive\\KlirStuff\\_RH\\Tech Challenge\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\Klir.TechChallenge.Tests.csproj",
-        "packagesPath": "C:\\Users\\e4bar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\e4bar\\Desktop\\OneDrive\\KlirStuff\\_RH\\Tech Challenge\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\obj\\",
+        "projectPath": "C:\\Users\\juanp\\Documents\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\Klir.TechChallenge.Tests.csproj",
+        "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\juanp\\Documents\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\e4bar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\juanp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

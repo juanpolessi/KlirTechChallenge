@@ -2,7 +2,7 @@ using System;
 
 namespace KlirTechChallenge.Web.Api
 {
-    public class WeatherForecast
+    public class WeatherForecastViewModel
     {
         public DateTime Date { get; set; }
 
