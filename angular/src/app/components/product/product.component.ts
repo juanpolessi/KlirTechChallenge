@@ -1,4 +1,4 @@
-import { Component, Input, SimpleChanges } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { Product } from 'src/app/models/product.model';
 import { CartService } from 'src/app/services/cart.service';
 
@@ -7,7 +7,7 @@ import { CartService } from 'src/app/services/cart.service';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
-export class ProductComponent {
+export class ProductComponent implements OnInit{
   @Input() product!: Product;
   _value: number = 0;
   _step: number = 1;
@@ -17,6 +17,10 @@ export class ProductComponent {
   color: string = 'default';
 
   constructor(private cartService: CartService){}
+
+  ngOnInit(): void {
+    this._value = this.cartService.getProductQtd(this.product.id);
+  }
 
   changeValue(value: number) {
     console.log(value);  

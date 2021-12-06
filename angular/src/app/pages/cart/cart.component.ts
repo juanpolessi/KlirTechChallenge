@@ -21,4 +21,8 @@ export class CartComponent implements OnInit {
     })
   }
 
+  resetCart(){
+    this.cartService.resetCart();
+  }
+
 }

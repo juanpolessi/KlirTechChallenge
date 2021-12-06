@@ -20,6 +20,21 @@ export class CartService {
     return this.cart ? this.cart : [];
   }
 
+  getProductQtd(productId: number) {
+    this.getCart();
+
+    if (this.cart) {
+      let item = this.cart.products.filter((p) => p.idProduct === productId)[0]
+
+      if (item)
+        return item.qtd;
+      else
+        return 0;
+    }
+    else
+      return 0;
+  }
+
   setProduct(product: Product) {
     this.getCart();
 
@@ -61,7 +76,7 @@ export class CartService {
       this.cart.products.push(prod);
     }
 
-    this.cart.totalValue = this.cart && this.cart.products ? this.cart.products.reduce(function(acc, obj){ return acc + obj.total}, 0) : 0;
+    this.cart.totalValue = this.cart && this.cart.products ? this.cart.products.reduce(function (acc, obj) { return acc + obj.total }, 0) : 0;
     localStorage.setItem(this.localStorageKey, JSON.stringify(this.cart))
     this.cartUpdate.next(this.cart);
   }
@@ -82,19 +97,19 @@ export class CartService {
         this.cart.products = this.cart.products.filter((p) => p.idProduct !== product.id)
       }
 
-      this.cart.totalValue = this.cart && this.cart.products ? this.cart.products.reduce(function(acc, obj){ return acc + obj.total}, 0) : 0;
+      this.cart.totalValue = this.cart && this.cart.products ? this.cart.products.reduce(function (acc, obj) { return acc + obj.total }, 0) : 0;
       localStorage.setItem(this.localStorageKey, JSON.stringify(this.cart))
       this.cartUpdate.next(this.cart);
     }
   }
 
-  calcValueTotal(item: ProductsCart){
-    if(item.promotionId != 0){
-      if(item.promotionId === 1){
+  calcValueTotal(item: ProductsCart) {
+    if (item.promotionId != 0) {
+      if (item.promotionId === 1) {
         let valuePromotion = 0;
         let valueTotal = 0;
-        for(let i = 1; i <= item.qtd; i++){
-          if(i % 2 === 0){
+        for (let i = 1; i <= item.qtd; i++) {
+          if (i % 2 === 0) {
             valuePromotion = (i / 2) * item.price;
             valueTotal = 0;
           }
@@ -103,13 +118,13 @@ export class CartService {
           }
         }
 
-        return  valuePromotion + valueTotal;
+        return valuePromotion + valueTotal;
       }
-      else if(item.promotionId === 2){
+      else if (item.promotionId === 2) {
         let valuePromotion = 0;
         let valueTotal = 0;
-        for(let i = 1; i <= item.qtd; i++){
-          if(i % 3 === 0){
+        for (let i = 1; i <= item.qtd; i++) {
+          if (i % 3 === 0) {
             valuePromotion = (i / 3) * 10;
             valueTotal = 0;
           }
@@ -118,7 +133,7 @@ export class CartService {
           }
         }
 
-        return  valuePromotion + valueTotal;
+        return valuePromotion + valueTotal;
       }
     }
     else {
@@ -126,7 +141,7 @@ export class CartService {
     }
   }
 
-  resetCart(){
+  resetCart() {
     this.cart = null;
     localStorage.setItem(this.localStorageKey, JSON.stringify(this.cart))
     this.cartUpdate.next(this.cart);

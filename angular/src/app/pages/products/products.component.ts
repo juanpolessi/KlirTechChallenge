@@ -12,14 +12,11 @@ export class ProductsComponent implements OnInit {
   title = 'app';
   products: Product[];
 
-  constructor(private productsService: ProductsService,
-    private cartService: CartService) {}
+  constructor(private productsService: ProductsService) {}
 
   ngOnInit(): void {
     this.productsService.getProducts()
     .subscribe(products => this.products = products);
-
-    this.cartService.resetCart();
   }
 
 }
