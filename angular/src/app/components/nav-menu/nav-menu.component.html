@@ -27,6 +27,14 @@
           >
             <a class="nav-link text-dark" [routerLink]="['/']">Products</a>
           </li>
+          <li
+            class="nav-item position-relative"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link text-dark" [routerLink]="['/cart']">Cart</a>
+            <span class="products-qtd">{{productsQtd}}</span>
+          </li>
         </ul>
       </div>
     </div>

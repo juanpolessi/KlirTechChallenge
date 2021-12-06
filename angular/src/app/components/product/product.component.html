@@ -10,18 +10,10 @@
     <span *ngIf="product.promotionId !== 0" class="promotion">{{product.promotion}}</span>
   </div>
   <div class="d-flex justify-content-center mt-1">
-    <!-- <angular-input-counter 
-        [min]="0"  
-        [max]="20"   
-        [step]="1"  
-        [readonly]="true"  
-        [(counterValue)]="counterValue" 
-        [color]="'primary'"
-        (change)="changeValue($event)"></angular-input-counter> -->
 
     <mat-form-field>
       <button mat-button mat-icon-button matPrefix aria-label="Remove" [color]="getColor()"
-        (click)="incrementValue(-_step)" [disabled]="shouldDisableDecrement(_value)">
+        (click)="dencrementValue(_step)" [disabled]="shouldDisableDecrement(_value)">
         <mat-icon>remove</mat-icon>
       </button>
       <input matInput type="number" [(ngModel)]="_value" (focus)="setColor('primary')" (blur)="setColor('default')" />

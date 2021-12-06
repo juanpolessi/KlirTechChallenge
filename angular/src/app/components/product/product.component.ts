@@ -1,5 +1,6 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
 import { Product } from 'src/app/models/product.model';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-product',
@@ -15,6 +16,8 @@ export class ProductComponent {
   _wrap: boolean = false;
   color: string = 'default';
 
+  constructor(private cartService: CartService){}
+
   changeValue(value: number) {
     console.log(value);  
   }
@@ -28,8 +31,6 @@ export class ProductComponent {
   }
 
   incrementValue(step: number = 1): void {
-    console.log('aqui')
-
     let inputValue = this._value + step;
 
     if (this._wrap) {
@@ -37,6 +38,20 @@ export class ProductComponent {
     }
 
     this._value = inputValue;
+
+    this.cartService.setProduct(this.product);
+  }
+
+  dencrementValue(step: number = 1): void {
+    let inputValue = this._value - step;
+
+    if (this._wrap) {
+      inputValue = this.wrappedValue(inputValue);
+    }
+
+    this._value = inputValue;
+
+    this.cartService.removeProduct(this.product);
   }
 
   private wrappedValue(inputValue): number {

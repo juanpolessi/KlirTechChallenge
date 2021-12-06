@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Product } from 'src/app/models/product.model';
+import { CartService } from 'src/app/services/cart.service';
 import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
@@ -11,11 +12,14 @@ export class ProductsComponent implements OnInit {
   title = 'app';
   products: Product[];
 
-  constructor(private productsService: ProductsService) {}
+  constructor(private productsService: ProductsService,
+    private cartService: CartService) {}
 
   ngOnInit(): void {
     this.productsService.getProducts()
     .subscribe(products => this.products = products);
+
+    this.cartService.resetCart();
   }
 
 }

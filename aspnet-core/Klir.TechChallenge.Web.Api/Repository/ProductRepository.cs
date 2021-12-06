@@ -42,7 +42,7 @@ namespace Klir.TechChallenge.Web.Api.Repository
 
             var product3 = new ProductDTO()
             {
-                Id = 1,
+                Id = 3,
                 Name = "Product C",
                 Price = 2,
                 Promotion = "",
@@ -51,11 +51,11 @@ namespace Klir.TechChallenge.Web.Api.Repository
 
             var product4 = new ProductDTO()
             {
-                Id = 1,
+                Id = 4,
                 Name = "Product D",
                 Price = 4,
-                Promotion = "3 for 10 Euro",
-                PromotionId = (int)PromotionId.ThreeforTenEuro
+                Promotion = "",
+                PromotionId = (int)PromotionId.NoPromotion
             };
 
             var listProducts = new List<ProductDTO>();
