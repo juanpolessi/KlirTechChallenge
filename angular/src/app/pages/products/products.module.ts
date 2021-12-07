@@ -5,7 +5,6 @@ import { ProductsComponent } from './products.component';
 import { ProductsRoutingModule } from './products.routing.module';
 import { ProductComponent } from 'src/app/components/product/product.component';
 import { CommonModule } from '@angular/common';
-import { AngularCounterModule } from 'angular-input-counter';
 import { MatButtonModule, MatIconModule, MatInputModule } from '@angular/material';
 
 @NgModule({
@@ -17,7 +16,6 @@ import { MatButtonModule, MatIconModule, MatInputModule } from '@angular/materia
     CommonModule,
     HttpClientModule,
     FormsModule,
-    AngularCounterModule,
     ProductsRoutingModule,
     MatButtonModule,
     MatInputModule,

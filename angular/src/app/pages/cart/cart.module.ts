@@ -3,7 +3,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CartRoutingModule } from './cart.routing.module';
 import { CommonModule } from '@angular/common';
-import { AngularCounterModule } from 'angular-input-counter';
 import { MatButtonModule, MatIconModule, MatInputModule } from '@angular/material';
 import { CartComponent } from './cart.component';
 import {MatTableModule} from '@angular/material/table';
@@ -17,7 +16,6 @@ import {MatTableModule} from '@angular/material/table';
     CommonModule,
     HttpClientModule,
     FormsModule,
-    AngularCounterModule,
     MatButtonModule,
     MatInputModule,
     MatIconModule,

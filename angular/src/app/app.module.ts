@@ -6,7 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { AppRoutingModule } from './app.routing.module';
-import { AngularCounterModule } from 'angular-input-counter';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
-    AngularCounterModule,
     BrowserAnimationsModule,
     AppRoutingModule
   ],
